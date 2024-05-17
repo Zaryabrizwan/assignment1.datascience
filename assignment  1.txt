@@ -1,0 +1,11 @@
+data = {
+    'NAME':['ZARI','ZARYAB','URWA','AYESHA'],
+    'CGPA':[3.9,3.8,3.3,3.4],
+    'MARKS':[90,85,75,82],
+    'PERCENTAGE': [87.5,83.0,75.3,82.0],
+}
+  
+df =pd.DataFrame(data)
+scaler = StandardScaler()
+df[['CGPA','MARKS','PERCENTAGE']] = Scaler.fit_transform(df[['CGPA','MARKS','PERCENTAGE']])
+print(df)
